@@ -1,0 +1,121 @@
+Script started on 2023-06-27 11:50:37+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ sudo update-alternatives --config iptables
+[?2004l[sudo] password for chetan: 
+There are 2 choices for the alternative iptables (providing /usr/sbin/iptables).
+
+  Selection    Path                       Priority   Status
+------------------------------------------------------------
+  0            /usr/sbin/iptables-nft      20        auto mode
+* 1            /usr/sbin/iptables-legacy   10        manual mode
+  2            /usr/sbin/iptables-nft      20        manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 1
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ sudo dockerd
+[?2004l[36mINFO[0m[2023-06-27T11:51:45.828946914+05:30] Starting up                                  
+[36mINFO[0m[2023-06-27T11:51:45.830206006+05:30] containerd not running, starting managed containerd 
+[36mINFO[0m[2023-06-27T11:51:45.831494248+05:30] started new containerd process                [36maddress[0m=/var/run/docker/containerd/containerd.sock [36mmodule[0m=libcontainerd [36mpid[0m=900
+[36mINFO[0m[2023-06-27T11:51:45.858949023+05:30] starting containerd                           [36mrevision[0m=3dce8eb055cbb6872793272b4f20ed16117344f8 [36mversion[0m=1.6.21
+[36mINFO[0m[2023-06-27T11:51:45.870889995+05:30] loading plugin "io.containerd.content.v1.content"...  [36mtype[0m=io.containerd.content.v1
+[36mINFO[0m[2023-06-27T11:51:45.871090611+05:30] loading plugin "io.containerd.snapshotter.v1.aufs"...  [36mtype[0m=io.containerd.snapshotter.v1
+[36mINFO[0m[2023-06-27T11:51:45.872947550+05:30] skip loading plugin "io.containerd.snapshotter.v1.aufs"...  [36merror[0m="aufs is not supported (modprobe aufs failed: exit status 1 \"modprobe: FATAL: Module aufs not found in directory /lib/modules/5.10.102.1-microsoft-standard-WSL2\\n\"): skip plugin" [36mtype[0m=io.containerd.snapshotter.v1
+[36mINFO[0m[2023-06-27T11:51:45.873034818+05:30] loading plugin "io.containerd.snapshotter.v1.btrfs"...  [36mtype[0m=io.containerd.snapshotter.v1
+[36mINFO[0m[2023-06-27T11:51:45.873218386+05:30] skip loading plugin "io.containerd.snapshotter.v1.btrfs"...  [36merror[0m="path /var/lib/docker/containerd/daemon/io.containerd.snapshotter.v1.btrfs (ext4) must be a btrfs filesystem to be used with the btrfs snapshotter: skip plugin" [36mtype[0m=io.containerd.snapshotter.v1
+[36mINFO[0m[2023-06-27T11:51:45.873242713+05:30] loading plugin "io.containerd.snapshotter.v1.devmapper"...  [36mtype[0m=io.containerd.snapshotter.v1
+[33mWARN[0m[2023-06-27T11:51:45.873274729+05:30] failed to load plugin io.containerd.snapshotter.v1.devmapper  [33merror[0m="devmapper not configured"
+[36mINFO[0m[2023-06-27T11:51:45.873396351+05:30] loading plugin "io.containerd.snapshotter.v1.native"...  [36mtype[0m=io.containerd.snapshotter.v1
+[36mINFO[0m[2023-06-27T11:51:45.873413842+05:30] loading plugin "io.containerd.snapshotter.v1.overlayfs"...  [36mtype[0m=io.containerd.snapshotter.v1
+[36mINFO[0m[2023-06-27T11:51:45.873578801+05:30] loading plugin "io.containerd.snapshotter.v1.zfs"...  [36mtype[0m=io.containerd.snapshotter.v1
+[36mINFO[0m[2023-06-27T11:51:45.873811523+05:30] skip loading plugin "io.containerd.snapshotter.v1.zfs"...  [36merror[0m="path /var/lib/docker/containerd/daemon/io.containerd.snapshotter.v1.zfs must be a zfs filesystem to be used with the zfs snapshotter: skip plugin" [36mtype[0m=io.containerd.snapshotter.v1
+[36mINFO[0m[2023-06-27T11:51:45.873837948+05:30] loading plugin "io.containerd.metadata.v1.bolt"...  [36mtype[0m=io.containerd.metadata.v1
+[33mWARN[0m[2023-06-27T11:51:45.873852533+05:30] could not use snapshotter devmapper in metadata plugin  [33merror[0m="devmapper not configured"
+[36mINFO[0m[2023-06-27T11:51:45.873891196+05:30] metadata content store policy set             [36mpolicy[0m=shared
+[36mINFO[0m[2023-06-27T11:51:45.874052193+05:30] loading plugin "io.containerd.differ.v1.walking"...  [36mtype[0m=io.containerd.differ.v1
+[36mINFO[0m[2023-06-27T11:51:45.874069010+05:30] loading plugin "io.containerd.event.v1.exchange"...  [36mtype[0m=io.containerd.event.v1
+[36mINFO[0m[2023-06-27T11:51:45.874076090+05:30] loading plugin "io.containerd.gc.v1.scheduler"...  [36mtype[0m=io.containerd.gc.v1
+[36mINFO[0m[2023-06-27T11:51:45.874134856+05:30] loading plugin "io.containerd.service.v1.introspection-service"...  [36mtype[0m=io.containerd.service.v1
+[36mINFO[0m[2023-06-27T11:51:45.874144246+05:30] loading plugin "io.containerd.service.v1.containers-service"...  [36mtype[0m=io.containerd.service.v1
+[36mINFO[0m[2023-06-27T11:51:45.874152013+05:30] loading plugin "io.containerd.service.v1.content-service"...  [36mtype[0m=io.containerd.service.v1
+[36mINFO[0m[2023-06-27T11:51:45.874159444+05:30] loading plugin "io.containerd.service.v1.diff-service"...  [36mtype[0m=io.containerd.service.v1
+[36mINFO[0m[2023-06-27T11:51:45.874175433+05:30] loading plugin "io.containerd.service.v1.images-service"...  [36mtype[0m=io.containerd.service.v1
+[36mINFO[0m[2023-06-27T11:51:45.874226310+05:30] loading plugin "io.containerd.service.v1.leases-service"...  [36mtype[0m=io.containerd.service.v1
+[36mINFO[0m[2023-06-27T11:51:45.874283843+05:30] loading plugin "io.containerd.service.v1.namespaces-service"...  [36mtype[0m=io.containerd.service.v1
+[36mINFO[0m[2023-06-27T11:51:45.874297252+05:30] loading plugin "io.containerd.service.v1.snapshots-service"...  [36mtype[0m=io.containerd.service.v1
+[36mINFO[0m[2023-06-27T11:51:45.874310630+05:30] loading plugin "io.containerd.runtime.v1.linux"...  [36mtype[0m=io.containerd.runtime.v1
+[36mINFO[0m[2023-06-27T11:51:45.874345344+05:30] loading plugin "io.containerd.runtime.v2.task"...  [36mtype[0m=io.containerd.runtime.v2
+[36mINFO[0m[2023-06-27T11:51:45.874487968+05:30] loading plugin "io.containerd.monitor.v1.cgroups"...  [36mtype[0m=io.containerd.monitor.v1
+[36mINFO[0m[2023-06-27T11:51:45.874997962+05:30] loading plugin "io.containerd.service.v1.tasks-service"...  [36mtype[0m=io.containerd.service.v1
+[36mINFO[0m[2023-06-27T11:51:45.875043095+05:30] loading plugin "io.containerd.grpc.v1.introspection"...  [36mtype[0m=io.containerd.grpc.v1
+[36mINFO[0m[2023-06-27T11:51:45.875064236+05:30] loading plugin "io.containerd.internal.v1.restart"...  [36mtype[0m=io.containerd.internal.v1
+[36mINFO[0m[2023-06-27T11:51:45.875124991+05:30] loading plugin "io.containerd.grpc.v1.containers"...  [36mtype[0m=io.containerd.grpc.v1
+[36mINFO[0m[2023-06-27T11:51:45.875151340+05:30] loading plugin "io.containerd.grpc.v1.content"...  [36mtype[0m=io.containerd.grpc.v1
+[36mINFO[0m[2023-06-27T11:51:45.875178303+05:30] loading plugin "io.containerd.grpc.v1.diff"...  [36mtype[0m=io.containerd.grpc.v1
+[36mINFO[0m[2023-06-27T11:51:45.875205372+05:30] loading plugin "io.containerd.grpc.v1.events"...  [36mtype[0m=io.containerd.grpc.v1
+[36mINFO[0m[2023-06-27T11:51:45.875219512+05:30] loading plugin "io.containerd.grpc.v1.healthcheck"...  [36mtype[0m=io.containerd.grpc.v1
+[36mINFO[0m[2023-06-27T11:51:45.875232297+05:30] loading plugin "io.containerd.grpc.v1.images"...  [36mtype[0m=io.containerd.grpc.v1
+[36mINFO[0m[2023-06-27T11:51:45.875271503+05:30] loading plugin "io.containerd.grpc.v1.leases"...  [36mtype[0m=io.containerd.grpc.v1
+[36mINFO[0m[2023-06-27T11:51:45.875285130+05:30] loading plugin "io.containerd.grpc.v1.namespaces"...  [36mtype[0m=io.containerd.grpc.v1
+[36mINFO[0m[2023-06-27T11:51:45.875298351+05:30] loading plugin "io.containerd.internal.v1.opt"...  [36mtype[0m=io.containerd.internal.v1
+[36mINFO[0m[2023-06-27T11:51:45.875341739+05:30] loading plugin "io.containerd.grpc.v1.snapshots"...  [36mtype[0m=io.containerd.grpc.v1
+[36mINFO[0m[2023-06-27T11:51:45.875353475+05:30] loading plugin "io.containerd.grpc.v1.tasks"...  [36mtype[0m=io.containerd.grpc.v1
+[36mINFO[0m[2023-06-27T11:51:45.875364Script started on 2023-07-17 17:15:47+05:30 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="120" LINES="30"]
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ sudo docker run -dit --name=web debian
+[?2004l[sudo] password for chetan: 
+docker: Error response from daemon: Conflict. The container name "/web" is already in use by container "2f962c8f25f175b9bc6c44c407220aa62e09670a9881448d9ab250e1d7c9e07d". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ sudo docker rm web
+[?2004lweb
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ sudo docker rm webun -dit --name=web debian
+[?2004l51875c4eed0fb8e2fe34ece5195c67b8d0b89ae6b33b763eac9fed80fe7361d8
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ sudo docker run -dit --name=web debianm web[Kun -dit --name=web debianupdate-alternatives --config iptables[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[Ksudo docker run -dit --name=web debian[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[Ksudo update-alternatives --config iptables[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pdocker run -dit --name=web debianm web[Kun -dit --name=web debian[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED          STATUS          PORTS     NAMES
+51875c4eed0f   debian    "bash"    18 seconds ago   Up 16 seconds             web
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ sudo docker ps -a
+[?2004lCONTAINER ID   IMAGE           COMMAND       CREATED          STATUS                     PORTS     NAMES
+51875c4eed0f   debian          "bash"        34 seconds ago   Up 33 seconds                        web
+031e3352c2a6   ubuntu:latest   "/bin/bash"   2 weeks ago      Exited (137) 2 weeks ago             lucid_greider
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ sudo docker ps -a[Kl
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED          STATUS          PORTS     NAMES
+51875c4eed0f   debian    "bash"    43 seconds ago   Up 42 seconds             web
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ sudo docker stop web
+[?2004lweb
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ sudo docker rm web
+[?2004lweb
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ [K(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ [K(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ [K(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ [K(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ [K(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ [K(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ [K(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ [K(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ [K(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ [K(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ [K(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ [K(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ [K(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ [K(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ [K(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ [K(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ [K(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ [K(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ docker run -dit --restart=always --name=web  [Kdebian
+[?2004ldocker: permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create?name=web": dial unix /var/run/docker.sock: connect: permission denied.
+See 'docker run --help'.
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ docker run -dit --restart=always --name=web debian[1@s[1@u[C[1@d[1@o[1@ 
+[?2004l18b54b5c6f874931776917be517c851f662b3922c078b405b0bda62bd27d58fa
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ sudo docker inspect webm[K \[K| grep -A3 RestartPolicy
+[?2004l            "[01;31m[KRestartPolicy[m[K": {
+                "Name": "always",
+                "MaximumRetryCount": 0
+            },
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ sudo docker stop web
+[?2004lweb
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ sudo docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ sudo docker psstop webinspect web | grep -A3 RestartPolicyrun -dit --restart=always --name=web debian[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[32Psudo docker rm web
+[?2004lweb
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ sudo docker rm web[4Pps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ sudo docker ps -a
+[?2004lCONTAINER ID   IMAGE           COMMAND       CREATED       STATUS                     PORTS     NAMES
+031e3352c2a6   ubuntu:latest   "/bin/bash"   2 weeks ago   Exited (137) 2 weeks ago             lucid_greider
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ sudo docker system prune
+[?2004lWARNING! This will remove:
+  - all stopped containers
+  - all networks not used by at least one container
+  - all dangling images
+  - all dangling build cache
+
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+031e3352c2a6f0c81a0f202fa3e4274c9ae40a7dba8393b02ba55c98b2608645
+
+Total reclaimed space: 0B
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ sudo docker system prune[7Pps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h(base) ]0;chetan@TIGER02058: ~[01;32mchetan@TIGER02058[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2023-07-17 17:32:38+05:30 [COMMAND_EXIT_CODE="0"]
